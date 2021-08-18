@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Cart</title>
+    <!-- bootstrap And css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/8f45bdc130.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header class="container text-center mt-4">
+        <i class="text-danger fas fa-truck fa-2x truck-icon"> 40 Mins</i>
+        <h1 class=" text-danger">Your Order From Foodies</h1>
+    </header>
+    <main class="container">
+        <section class="mt-5">
+           <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h3 class="fw-bold text-success">Jalapeno Grilled </h3>
+                <p class="fw-bold">reguler</p>
+            </div>
+            <div class="d-flex  align-items-center">
+                <div>
+                    <button onclick="totalInputCount('jalapeno', 250, false)"><i class="fas fa-minus"></i></button>
+                    <input type="number" min="0" value="1" class="input-box" name="" id="jalapeno-count">
+                    <button onclick="totalInputCount('jalapeno', 250, true)" ><i class="fas fa-plus"></i></button>
+                    
+                </div>
+                <div class=""><h5>TK <span id="jalapeno-total">250</span></h5></div>
+            </div>
+           </div>
+           <section class="mt-5">
+            <div class="d-flex justify-content-between align-items-center">
+             <div>
+                 <h3 class="fw-bold text-success">Grilled Vegetable</h3>
+                 <p class="fw-bold">reguler</p>
+             </div>
+             <div class="d-flex align-items-center">
+                 <div>
+                     <button onclick="totalInputCount('grilled', 100, false)"><i class="fas fa-minus"></i></button>
+                     <input type="number" min="0" value="1" class="input-box" name="" id="grilled-count">
+                     <button onclick="totalInputCount('grilled', 100, true)" ><i class="fas fa-plus"></i></button>
+                     
+                 </div>
+                 <div class=""><h5>TK <span id="grilled-total">100</span></h5></div>
+             </div>
+            </div>
+            <section class="mt-5">
+                <div class="d-flex justify-content-between align-items-center">
+                 <div>
+                     <h3 class="fw-bold text-success">Garlic Mushroom</h3>
+                     <p class="fw-bold">reguler</p>
+                 </div>
+                 <div class="d-flex align-items-center">
+                     <div>
+                         <button onclick="totalInputCount('garlic', 100, false)"><i class="fas fa-minus"></i></button>
+                         <input type="number" min="0" value="1" class="input-box" name="" id="garlic-count">
+                         <button onclick="totalInputCount('garlic', 100, true)"><i class="fas fa-plus"></i></button>
+                         
+                     </div>
+                     <div class=""><h5>TK <span id="garlic-total">150</span></h5></div>
+                 </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6>Subtotal</h6>
+                    </div>
+                    <div>
+                        <h6>TK <span id="sub-total">00</span></h6>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6>Delivery Fee</h6>
+                    </div>
+                    <div>
+                        <h6>TK <span id="tax-amount">00</span></h6>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="fw-bold">Total(Inc.VAT)</h6>
+                    </div>
+                    <div>
+                        <h6>TK <span id="total-price">00</span></h6>
+                    </div>
+                </div>
+        </section>
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Js scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

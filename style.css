@@ -1,0 +1,9 @@
+.input-box {
+  background-color: #f6f5fa;
+  border: none;
+  width: 65px;
+  border-radius: 10px !important;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
